@@ -20,11 +20,6 @@ server.get('/', (req, res) => {
   res.send('home route');
 });
 
-server.get('/data', (req, res) => {
-  let family = [{ Name: 'Amjad' }, { Name: 'Cooky' }];
-  res.json(family);
-});
-
 // server is ready for lestining the requests.
 server.listen (PORT,() => {
 
