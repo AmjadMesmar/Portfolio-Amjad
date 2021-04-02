@@ -5,7 +5,9 @@ const express = require('express'); // then run npm install express
 
 // initialise express, now server has all properties and methods of express!
 const server = express();
-const PORT = 3000;
+// const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 
 server.use(express.static('./public'));
 
